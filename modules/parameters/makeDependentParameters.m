@@ -9,7 +9,7 @@ function par = makeDependentParameters(par, exclude)
 	end
 
 	% define dependencies
-	[~, ~, dependencies] = definitions();
+	[~, ~, dependencies] = definitions('pulse');
 
 	% filter out the ones that are excluded
 	id = ismember([dependencies{:,1}]', exclude);

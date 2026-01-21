@@ -17,7 +17,7 @@ function par = makeDefaultParameters(rainType, baseCatchment)
 end
 
 function par = updateByCatchment(par, baseCatchment)
-	[~, catchments] = definitions();
+	[~, catchments] = definitions('pulse');
 
 	% find catchment
 	id = find(catchments.name == baseCatchment, 1);
